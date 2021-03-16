@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fabulous Garden</title>
+    <link rel="stylesheet" href="./css/resst.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Fabulous Garden</h1>
+    </header>
+    <main>
+        <div id= " formDiv">
+            <form id="ourForm">
+                <fieldset>
+                    <legend>New Flower</legend>
+                    <div>
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div>
+                        <label for="img">image</label>
+                        <br>
+                        <select name="img" id="img">
+                            <option value="Alstroemerias">Alstroemerias</option>
+                            <option value="Gardenias">Gardenias</option>
+                            <option value="Orchids">Orchids</option>
+                            <option value="Roses">Roses</option>
+                            <option value="Sunflowers">Sunflowers</option>
+                            <option value="Tulips">Tulips</option>
+                            <option value="Peonies">Peonies</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="season">Season</label>
+                        <br>
+                        <input type="text" name="season" id="season">
+                    </div>
+                    <div>
+                        <button type="submit"> save</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+        <div id="dataDiv"></div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th># Image</th>
+                    <th>Name</th>
+                    <th>Season</th>
+                </tr>
+            </thead>
+            <tbody id ="tableBodyElement">
+                
+            </tbody>
+
+        </table>
+    </main>
+    <footer>
+        all rights reserved 2021 &copy; ASAC 
+    </footer>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
